@@ -1,0 +1,20 @@
+<head>
+  <title>blazevsreact</title>
+</head>
+
+<body>
+  {{> layout}}
+</body>
+
+<template name="layout">
+  {{> header}}
+  <div class="text-box">
+    {{#if isBlazeTest}}
+      {{> blazetest}}
+    {{else}}
+      {{#if isReactTest}}
+        {{> reacttest}}
+      {{/if}}
+    {{/if}}
+  </div>
+</template>

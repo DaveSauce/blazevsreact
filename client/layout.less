@@ -1,0 +1,91 @@
+.header__container {
+  position: relative;
+  padding-bottom: 40px;
+  background-color: #a3d49c;
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow:    2px 2px 8px 0px rgba(0,0,0,0.75);
+  box-shadow:         2px 2px 8px 0px rgba(0,0,0,0.75);
+  overflow: hidden;
+  z-index: 1;
+  .header {
+    margin: 20px;
+    text-align: center;
+  }
+  .load-times {
+    text-align: center;
+    div {
+      display: inline-block;
+      margin: 0 25px;
+    }
+  }
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+    .button {
+      margin: 10px;
+    }
+  }
+  .header__loading-animation {
+    display: none;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 50%;
+    top: 170px;
+    margin-left: -10px;
+    background-image: url( images/loading-icon.gif );
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .header__loading-animation.active {
+    display: block;
+  }
+}
+
+body {
+  background-color: #d2d2d2;
+}
+
+.text-box {
+  background-color: #d2d2d2;
+  overflow: hidden;
+  .text-page {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 50px;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow:    2px 2px 8px 0px rgba(0,0,0,0.75);
+    box-shadow:         2px 2px 8px 0px rgba(0,0,0,0.75);
+  }
+  .score-10 {
+    background-color: darken( #fff, 3%);
+  }
+  .score-20 {
+    background-color: darken( #fff, 5%);
+  }
+  .score-30 {
+    background-color: darken( #fff, 7%);
+  }
+  .score-40 {
+    background-color: darken( #fff, 9%);
+  }
+  .score-50 {
+    background-color: darken( #fff, 11%);
+  }
+  .score-60 {
+    background-color: darken( #fff, 13%);
+  }
+  .score-70 {
+    background-color: darken( #fff, 15%);
+  }
+  .score-80 {
+    background-color: darken( #fff, 17%);
+  }
+  .score-90 {
+    background-color: darken( #fff, 19%);
+  }
+  .score-100 {
+    background-color: darken( #fff, 21%);
+  }
+}

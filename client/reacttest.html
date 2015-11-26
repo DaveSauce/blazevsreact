@@ -1,0 +1,8 @@
+<template name="reacttest">
+  {{#if reactLoader}}
+    <div id="reactTest">
+      {{> React component=container pages=pagesJson }}
+    </div>
+    {{> killCounter}}
+  {{/if}}
+</template>

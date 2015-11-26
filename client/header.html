@@ -1,0 +1,19 @@
+<template name="header">
+  <header class="header__container">
+    
+    <h2 class="ui header">React vs. Blaze</h2>
+    <div class="load-times">
+      <div class="load-times__current">Last Load Time {{currentLoadTime}}</div>
+      <div class="load-times__blaze">Blaze Average {{blazeLoadTime}}</div>
+      <div class="load-times__react">React Average {{reactLoadTime}}</div>
+    </div>
+    <div class="button-container">
+      <button id='switchToReact' class="ui button {{reactActive}}">React</button>
+      <button id='switchToBlaze' class="ui button {{blazeActive}}">Blaze</button>
+      <button id='loadJSON' class="ui button {{disableBlank}}">load pages</button>
+      <button id='clearBtn' class="ui button">clear</button>
+    </div>
+
+    <div id="header__loading-animation" class="header__loading-animation"></div>
+  </header>
+</template>

@@ -1,0 +1,18 @@
+<template name="blazetest">
+  {{#if blazeLoader}}
+    <div class="ui text justified container">
+      {{#each page}}
+        <div class="text-page">
+          {{#each paragraph}}
+            <p>
+              {{#each sentence}}
+                <span class="sentence score-{{score}}">{{text}}</span>
+              {{/each}}
+            </p>
+          {{/each}}
+        </div>
+      {{/each}}
+    </div>
+    {{> killCounter}}
+  {{/if}}
+</template>
